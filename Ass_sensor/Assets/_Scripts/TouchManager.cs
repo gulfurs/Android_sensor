@@ -31,8 +31,8 @@ public class TouchManager : MonoBehaviour
 
         // sw = new StreamWriter(filePath);
 
-        sw = new StreamWriter(Application.persistentDataPath + "/" + FILENAME);
-        sw.WriteLine("Time,X,Y,X");
+        //sw = new StreamWriter(Application.persistentDataPath + "/" + FILENAME);
+        //sw.WriteLine("Time,X,Y,X");
     }
 
     public void OnButtonClick(){
@@ -62,7 +62,7 @@ public class TouchManager : MonoBehaviour
             "\n Z: " + accData.z.ToString("0.000");
             
             
-            sw.WriteLine ("{0},{1},{2,{3}" , Time.time, accData.x, accData.y, accData.z);
+            //sw.WriteLine ("{0},{1},{2,{3}", Time.time, accData.x, accData.y, accData.z);
             Debug.Log("The Data: " + accData);
             Debug.Log("The Time: " + Time.time);
             Debug.Log("The count " + count);
